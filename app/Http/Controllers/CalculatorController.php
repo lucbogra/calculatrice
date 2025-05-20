@@ -23,7 +23,7 @@ class CalculatorController extends Controller
     /**
      * j'injecte directement le service dans la méthode car il n'est utilisé qu'une seule fois dans le controller
      */
-    public function calculate(CalculatorRequest $request, CalculatorService $calculatorService) : View|RedirectResponse
+    public function calculate(CalculatorRequest $request) : View|RedirectResponse
     {
         $data = $request->validated();
         try {
