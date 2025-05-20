@@ -2,7 +2,9 @@
 
 namespace App\Services;
 
-class CalculatorService
+use App\Services\interfaces\CalculatorInterface;
+
+class CalculatorService implements CalculatorInterface
 {
     public function calculate(float $first_number, float $second_number, string $operation) : float
     {
